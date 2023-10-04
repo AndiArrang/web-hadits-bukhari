@@ -1,0 +1,101 @@
+:root {
+  --warna-utama: green;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  margin-top: 70px;
+  z-index: 1; 
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+@font-face{
+  font-family:'LPMQ';
+  src:url('https://kangismet.github.io/fonts/lpmq.eot');
+  src:url('https://kangismet.github.io/fonts/lpmq.eot?#iefix') format('embedded-opentype'),
+  url('https://kangismet.github.io/fonts/lpmq.ttf') format('truetype');
+  font-weight:400;
+  font-weight:normal;
+  font-display: swap;
+  }
+
+  .arab{
+  line-height: 40px;
+  font-family: LPMQ,"Traditional Arabic",Tahoma,sans-serif;
+  font-weight: bold;
+  text-align: right;
+  direction: rtl;
+  }
+
+.terjemah{
+  text-align: left;
+  font-family: LPMQ,"Traditional Arabic",Tahoma,sans-serif;  
+  font-weight: lighter;
+}  
+
+ /* css untuk pagination */
+
+ .navigation{
+  width: 50%;
+ }
+.page-item.active .page-link{
+  background-color: green;
+  color: white;
+}
+
+.green {
+  background-color: white;
+  color: green;
+}
+
+
+/* css untuk tek hasil pencarian */
+.alert {
+  width: 100%;
+  text-align: center;
+  font-family: LPMQ,"Traditional Arabic",Tahoma,sans-serif;
+  /* font-weight: bolder; */
+}
+
+
+
+#main{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.fof{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1{
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+  from{box-shadow: inset -3px 0px 0px #888;}
+  to{box-shadow: inset -3px 0px 0px transparent;}
+}
